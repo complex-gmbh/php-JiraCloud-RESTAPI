@@ -25,6 +25,7 @@ class RemoteIssueLink implements \JsonSerializable
     public function __construct()
     {
         $this->object = new RemoteObject();
+        $this->globalId = '';
     }
 
     public function setUrl(string $url): static
